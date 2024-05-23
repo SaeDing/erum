@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px; /* 기본 글씨 크기 */
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+a {
+    color: #9370DB; /* 연보라색 */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        font-size: 14px; /* 모바일에서의 글씨 크기 */
+    }
+
+    th, td {
+        padding: 4px;
+    }
+}
+
+#details-container {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    background-color: #f9f9f9;
+    display: none; /* 초기에는 숨겨두기 */
+}
+
+/* 위치 텍스트 스타일 */
+.location {
+    color: #4682B4; /* 연하늘색 */
+    cursor: pointer;
+}
+
+.location:hover {
+    text-decoration: underline;
+}
+
+/* 맨 위로 이동 버튼 스타일 */
+#back-to-top {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4682B4; /* 파란색 */
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#back-to-top:hover {
+    background-color: #4169E1; /* 더 진한 파란색 */
+}
