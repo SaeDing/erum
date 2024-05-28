@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="이룸테크노 - 회사 및 기숙사 정보를 제공합니다.">
+    <meta name="keywords" content="이룸테크노, 기숙사, 회사, 정보">
+    <meta name="author" content="이룸테크노">
+
+    <meta property="og:url" content="https://www.이룸테크노.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="이룸테크노" />
+    <meta property="og:description" content="회사 및 기숙사 정보를 제공합니다." />
+    <meta property="og:image" content="https://www.xn--o80b65l23mpwi85a.com/img/rogo.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://www.이룸테크노.com" />
+    <meta name="twitter:title" content="이룸테크노" />
+    <meta name="twitter:description" content="회사 및 기숙사 정보를 제공합니다." />
+    <meta name="twitter:image" content="https://www.xn--o80b65l23mpwi85a.com/img/rogo.jpg" />
+
+     <!-- <link rel="icon" href="https://www.xn--o80b65l23mpwi85a.com/img/favicon.ico" type="image/x-icon" /> -->
+
+
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <table id="dormitory-table">
+            <thead>
+                <tr>
+                    <th>기숙사명</th>
+                    <th>주소</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('su')">수</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 683-5</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('ellim')">엘림</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 692-10</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('green')">그린</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 712-2</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('sense')">센스</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 679-14</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('campus')">캠퍼스</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 706-9</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('shinhwa')">신화</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 682-12</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('pyeonhan')">편한</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 676-5</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('cheong')">청룡(미사용중)</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 715-1</span></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="showDormDetails('yujin2')">유진빌2</a></td>
+                    <td><span class="location" onclick="copyToClipboard(this)">경기도 안성시 대덕면 내리 682-14</span></td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="details-container" class="details-container"></div>
+    </div>
+
+    <div class="navbar">
+        <button onclick="window.location.href='2.html'">기숙사</button>
+        <button onclick="window.location.href='index.html'">회사</button>
+        <div id="clock" class="clock"></div>
+        <button onclick="scrollToTop()">▲</button>
+    </div>
+    
+
+    <script src="2.js"></script>
+</body>
+</html>
