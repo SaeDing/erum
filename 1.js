@@ -1,6 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
     updateClock();
     setInterval(updateClock, 60000); // Update every minute
+
+    const navbar = document.querySelector('.navbar');
+
+    window.addEventListener('scroll', function() {
+        navbar.style.bottom = '0'; // 네비게이션 바 항상 화면 하단에 고정
+    });
+
+    const table = document.getElementById('company-table');
+    const rows = table.getElementsByTagName('tr');
+
+ for (let i = 0; i < rows.length; i++) {
+        rows[i].addEventListener('click', function() {
+            // 기존의 모든 행에서 강조 표시 제거
+            for (let j = 0; j < rows.length; j++) {
+                rows[j].classList.remove('highlighted');
+            }
+            // 클릭된 행에 강조 표시 추가
+            this.classList.add('highlighted');
+        });
+    }
 });
 
 function scrollToTop() {
@@ -19,7 +39,7 @@ function copyToClipboard(element) {
     textarea.select();
     document.execCommand('copy');
     document.body.removeChild(textarea);
-    showToast('주소가 클립보드에 복사되었습니다.');
+    showToast('기기에 복사되었습니다.');
 }
 
 function showToast(message) {
@@ -57,11 +77,19 @@ function showDormDetails(dorm) {
         case 'bmc':
             detailsContent = `
                 <h2>BMC</h2>
-                <img src="img/bmc통근.jpg" alt="BMC Image" style="width: 100%; height: auto;">
-                <img src="img/bmc버스.jpg" alt="BMC Image" style="width: 50%; height: auto;">
-                <img src="img/bmc파바.jpg" alt="BMC Image" style="width: 50%; height: auto;">
+                <img src="img/bmc통근.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/bmc버스.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/bmc파바.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p>BMC 관련 설명...</p>
-                <p><span class="location" onclick="copyToClipboard(this)">평택시 세교산단로 22번길 119</span></p>
+                <p>연차수당:  </span></p>
+                <p>기숙사가능여부:  </span></p>
+                <p>통근여부:  </span></p>
+                <p>휴식시간:  </span></p>
+                <p>시급:  </span></p>
+                <p>근무형태:  </span></p>
+                <p>특이사항:  </span></p>
+                <p>특이사항2:  </span></p>
+
             `;
             break;
         case 'daerim':
@@ -130,22 +158,25 @@ function showDormDetails(dorm) {
 }
 
 
-var modal = document.getElementById("myModal");
 
-// 이미지를 가져와서 모달 안에 삽입하고 "alt" 텍스트를 캡션으로 사용함
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-img.onclick = function(){
-  modal.style.display = "block"; // 모달 창 표시
-  modalImg.src = this.src; // 모달 이미지 설정
+
+
+function openModal(image) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = image.src;
 }
 
-// 모달을 닫는 닫기 버튼(<span>) 요소를 가져옴
-var span = document.getElementsByClassName("close")[0];
-
-// 사용자가 닫기 버튼(X)을 클릭할 때 모달을 닫음
-span.onclick = function() {
-  modal.style.display = "none"; // 모달 창 숨김
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+        closeModal();
+    }
 }
 
 
@@ -156,3 +187,6 @@ function updateClock() {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     clockElement.textContent = `${hours}:${minutes}`;
 }
+
+
+

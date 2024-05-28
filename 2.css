@@ -36,6 +36,7 @@ a:hover {
     border-collapse: collapse;
     font-size: 16px;
     margin-bottom: 20px;
+    padding-bottom: 50px;
     color: rgb(22, 39, 37);
 }
 
@@ -71,11 +72,12 @@ a:hover {
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 12px 24px;
+    padding: 10px 20px;
     border-radius: 8px;
     opacity: 0;
     transition: opacity 0.5s ease-in-out, bottom 0.5s ease-in-out;
     z-index: 1000;
+    
 }
 
 .toast.show {
@@ -86,6 +88,7 @@ a:hover {
 
 .navbar {
     position: fixed;
+    
     bottom: 0;
     width: 100%;
     display: flex;
@@ -94,6 +97,7 @@ a:hover {
     padding: 10px 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* 수정된 부분: 다른 요소 위에 나타나도록 z-index 설정 */
+    height: 40px !important;
 }
 
 .navbar button, .clock {
@@ -103,7 +107,6 @@ a:hover {
     padding: 10px 20px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 4px;
 }
 
 .navbar button:hover {

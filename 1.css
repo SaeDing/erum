@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -37,16 +39,16 @@ a:hover {
 .details-container {
     display: none;
     margin-top: 20px;
-    max-width: 1180px;
+    max-width: 1200px;
     width: 100%;
-    padding: 10px;
+    padding-bottom: 50px;
     border: 1px solid #ddd;
     background-color: #fff;
 }
 
 #company-table th, #company-table td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 12px;
     text-align: center;
 }
 
@@ -79,10 +81,13 @@ a:hover {
     opacity: 1;
 }
 
-
+.highlighted {
+    background-color: #d3d3d3; /* 강조 표시할 때 사용할 배경색 */
+}
 
 .navbar {
     position: fixed;
+    
     bottom: 0;
     width: 100%;
     display: flex;
@@ -91,7 +96,9 @@ a:hover {
     padding: 10px 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* 수정된 부분: 다른 요소 위에 나타나도록 z-index 설정 */
+    height: 40px !important;
 }
+
 .navbar button, .clock {
     background-color: #444;
     color: white;
@@ -105,9 +112,63 @@ a:hover {
     background-color: #555;
 }
 
+
+
+
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed; 
+    z-index: 1000; /* 네비게이션 바보다 위에 표시되도록 설정 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* 반투명 검은색 배경 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 90%; /* 너비를 더 크게 설정 */
+    max-width: 1000px; /* 최대 너비를 늘림 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    max-height: 90%; /* 최대 높이를 설정하여 화면에 맞추기 */
+    object-fit: contain; /* 이미지가 컨테이너에 맞게 조정 */
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 @media (max-width: 600px) {
     .navbar button, .clock {
         padding: 8px 10px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: auto; /* 너비를 자동으로 설정하여 가로 중앙 정렬 */
+        height: auto; /* 높이를 자동으로 설정하여 세로 중앙 정렬 */
+        max-width: 90%; /* 최대 너비를 90%로 설정 */
+        max-height: 90%; /* 최대 높이를 90%로 설정 */
     }
 }

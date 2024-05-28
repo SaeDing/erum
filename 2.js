@@ -19,7 +19,7 @@ function copyToClipboard(element) {
     textarea.select();
     document.execCommand('copy');
     document.body.removeChild(textarea);
-    showToast('주소가 클립보드에 복사되었습니다.');
+    showToast('기기에 복사되었습니다.');
 }
 
 function showToast(message) {
