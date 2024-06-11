@@ -70,9 +70,17 @@ function showDormDetails(dorm) {
         case 'green':
             detailsContent = `
                 <h2>그린빌 기숙사</h2>
-                <img src="img/그파바.jpg" alt="Green Dormitory" style="width: 100%; height: auto;">
                 <p>그린빌 기숙사 관련 설명...</p>
-                <p>심야전기 사용</p>
+                <p>씨엔엠 인원은 무조건 여기, 심야전기 사용</p>
+
+                <img src="img/그린0.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린1.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린2.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린3.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린4.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린5.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린6.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+            
             `;
             break;
         case 'sense':
@@ -106,8 +114,8 @@ function showDormDetails(dorm) {
         case 'cheong':
             detailsContent = `
                 <h2>다나오피스텔 기숙사</h2>
-                <img src="img/청파바.jpg" alt="Cheong Dormitory" style="width: 100%; height: auto;">
-                <p>청룡 기숙사 관련 설명...</p>
+                <img src="img/다나1.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <p>다나오피스텔 기숙사 관련 설명...</p>
             `;
             break;
         case 'yujin2':
@@ -126,10 +134,42 @@ function showDormDetails(dorm) {
     detailsContainer.scrollIntoView({ behavior: 'smooth' });
 }
 
+
+function openModal(image) {
+    var modal = document.getElementById("imageModal");
+    var modalImg = document.getElementById("modalImage");
+    modal.style.display = "block";
+    modalImg.src = image.src;
+}
+
+function closeModal() {
+    var modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+window.onclick = function(event) {
+    const modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+
+
+
 function updateClock() {
     const clockElement = document.getElementById('clock');
     const now = new Date();
     const hours = now.getHours().toString().padStart(2, '0');
     const minutes = now.getMinutes().toString().padStart(2, '0');
     clockElement.textContent = `${hours}:${minutes}`;
+}
+
+function showCompanyImages(company) {
+    const imageContainer = document.getElementById(`${company}-images`);
+    if (imageContainer.style.display === 'block') {
+        imageContainer.style.display = 'none';
+        imageContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    } else {
+        imageContainer.style.display = 'block';
+        imageContainer.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
 }
