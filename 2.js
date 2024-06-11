@@ -105,7 +105,7 @@ function showDormDetails(dorm) {
             break;
         case 'cheong':
             detailsContent = `
-                <h2>청룡 기숙사</h2>
+                <h2>다나오피스텔 기숙사</h2>
                 <img src="img/청파바.jpg" alt="Cheong Dormitory" style="width: 100%; height: auto;">
                 <p>청룡 기숙사 관련 설명...</p>
             `;
