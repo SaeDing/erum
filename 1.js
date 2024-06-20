@@ -285,6 +285,14 @@ function showDormDetails(dorm) {
                 <img src="img/pos1.png" alt="1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/pos2.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/pos3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos4.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos5.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos6.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos7.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos8.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos9.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/pos10.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                
                 <!-- Add more images as needed -->
             </div>
             <br>
@@ -299,6 +307,15 @@ function showDormDetails(dorm) {
                 <p>근무형태:남자 한 달간 주간고정 후 주야교대 변경(요로) 여자 3조2교대</span></p>
                 <p>특이사항:남:만근수당7만 상여금 250% 여:만근수당6만 상여금 200% </span></p>
                 <p>특이사항2:</span></p>
+                <p>포스뱅크</p>
+                <p>근무인원은 대략 140명정도</p>
+                <p>10시 20분부터 10시 30분까지 쉬는시간</p>
+                <p>점심 12시 30분부터 1시간</p>
+                <p>3시 20분부터 3시 30분까지 쉬는시간</p>
+                <p>석식 5시 30분부터 6시까지</p>
+                <p>식권받고 식사는 한식뷔페</p>
+                <p>잔업 2.5시간</p>
+
             `;
             break;
         default:
