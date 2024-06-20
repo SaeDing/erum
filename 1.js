@@ -142,7 +142,7 @@ function showDormDetails(dorm) {
                 <p>연차수당:  </span></p>
                 <p>퇴직금:  </span></p>
                 <p>기숙사여부:  </span></p>
-                <p>통근여부:  </span></p>
+                <p>통근여부:주풍 내리 위치 7:40 코사보아 부동산  주간은 기숙사 통근 가능 주야는 자차만.  </span></p>
                 <p>휴식시간:  </span></p>
                 <p>시급:  </span></p>
                 <p>근무형태:  </span></p>
