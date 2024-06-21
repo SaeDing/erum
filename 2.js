@@ -115,6 +115,7 @@ function showDormDetails(dorm) {
             detailsContent = `
                 <h2>다나오피스텔 기숙사</h2>
                 <img src="img/다나1.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/다나2.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p>다나오피스텔 기숙사 관련 설명...</p>
             `;
             break;
