@@ -142,15 +142,19 @@ function showDormDetails(dorm) {
                 <img src="img/zoo2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo4.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/jupung1.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/jupung2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/jupung3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p> 관련 설명...</p>
                 <p>연차수당:  </span></p>
                 <p>퇴직금:  </span></p>
                 <p>기숙사여부:  </span></p>
                 <p>통근여부:주풍 내리 위치 7:40 코사보아 부동산  주간은 기숙사 통근 가능 주야는 자차만.  </span></p>
-                <p>휴식시간:  </span></p>
-                <p>시급:  </span></p>
+                <p>내리인원 주간 파리바게트 08:00 탑승함..   </span></p>
+                <p>휴식시간:저녁 휴게시간 17:00-17:30 저녁X  </span></p>
+                <p>시급:9860 </span></p>
                 <p>근무형태:  </span></p>
-                <p>특이사항:  </span></p>
+                <p>특이사항: 정년 이후 계속 다닐 수 있다곤 함 </span></p>
                 <p>특이사항2:  </span></p>
             `;
             break;
