@@ -70,9 +70,10 @@ function showDormDetails(dorm) {
         case 'green':
             detailsContent = `
                 <h2>그린빌 기숙사</h2>
-                <p>그린빌 기숙사 관련 설명...</p>
+                <p>급여일 10일이면 무조건 여기 넣기.</p>
                 <p>씨엔엠 인원은 무조건 여기, 심야전기 사용</p>
-
+                <p>심야전기콘센트 막 쓰지않게 주의 꼭 줄 것 (전기세폭탄)</p>
+                <img src="img/그파바.jpg" alt="Sense Dormitory" style="width: 100%; height: auto;">
                 <img src="img/그린0.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/그린1.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/그린2.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
@@ -80,6 +81,7 @@ function showDormDetails(dorm) {
                 <img src="img/그린4.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/그린5.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/그린6.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/그린7.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
             
             `;
             break;
@@ -116,6 +118,9 @@ function showDormDetails(dorm) {
                 <h2>다나오피스텔 기숙사</h2>
                 <img src="img/다나1.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/다나2.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/다나3.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/다나4.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/다나5.jpg" alt="BMC Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p>다나오피스텔 기숙사 관련 설명...</p>
             `;
             break;
