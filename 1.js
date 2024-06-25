@@ -142,6 +142,9 @@ function showDormDetails(dorm) {
                 <img src="img/zoo2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo4.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/zoo5.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/zoo6.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/zoo7.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jupung1.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jupung2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jupung3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
