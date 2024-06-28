@@ -138,6 +138,9 @@ function showDormDetails(dorm) {
                 <h2>주풍테크</h2>
                 <img src="img/jubus1.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jubus2.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+
+
+                                <div class="image-container" id="bmc-images">
                 <img src="img/zoo1.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/zoo3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
@@ -148,6 +151,11 @@ function showDormDetails(dorm) {
                 <img src="img/jupung1.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jupung2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/jupung3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+
+                <!-- Add more images as needed -->
+            </div>
+            <button class="button1" onclick="showCompanyImages('bmc')">회사사진보기</button>
+            
                 <p> 관련 설명...</p>
                 <p>연차수당:  </span></p>
                 <p>퇴직금:  </span></p>
@@ -239,6 +247,9 @@ function showDormDetails(dorm) {
                 <img src="img/somangimg/8.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/somangimg/9.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/somangimg/10.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/somang1.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/somang2.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/somang3.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
 
                 <!-- Add more images as needed -->
             </div>
