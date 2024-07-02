@@ -230,6 +230,7 @@ function showDormDetails(dorm) {
             detailsContent = `
                 <h2>씨엔엠</h2>
                 <img src="img/cnmbus1.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/jubus00.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus2.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p> 관련 설명...</p>
