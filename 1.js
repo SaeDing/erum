@@ -112,6 +112,8 @@ function showDormDetails(dorm) {
                 <p>특이사항:  </span></p>
                 <p>특이사항2:  </span></p>
                 <p>모집요강복사본  </span></p>
+               
+                 <span class="location" onclick="copyToClipboard(this)">
                 <p>대림 세탁기부품회사</p>
                 <p>급여일 10일 / 08~20 / 9860</p>
                 <p>위치: 평택시 세교산단로 22번길</p>
@@ -119,8 +121,8 @@ function showDormDetails(dorm) {
                 <p>급여 350 이상</p>
                 <p>76년생까지 상여 150%</p>
                 <p>평택 통근. 자차 출근자 모집</p>
-                <p>경유지1 시청역육교 동문쪽 -> 경유지2 여중사거리 [참살이빵집] -> 경유지3 한성아파트 [버스정류장앞] -> 경유지4 재랭이오거리 [다래성 앞] -> 경유지5 평택지구대 옆 [사랑치과 앞] -> 경유지6 태영,부영 파리바게트 -> 회사도착</p>
-
+                <p>경유지1 시청역육교 동문쪽 -> 경유지2 여중사거리 [참살이빵집] -> 경유지3 한성아파트 [버스정류장앞] -> 경유지4 재랭이오거리 [다래성 앞] -> 경유지5 평택지구대 옆 [사랑치과 앞] -> 경유지6 태영,부영 파리바게트 -> 회사도착</p>          
+                        </span>
                 <button class="button1" onclick="showCompanyImages('bmc')">회사사진보기</button>
                 <div class="image-container" id="bmc-images">
                 <!-- Add more images as needed -->
