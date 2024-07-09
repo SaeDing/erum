@@ -62,6 +62,13 @@ a:hover {
     cursor: pointer;
 }
 
+.time1 {
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+
+
 
 .toast {
     position: fixed; /* 기존 값: absolute */
