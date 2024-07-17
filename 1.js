@@ -233,8 +233,8 @@ function showDormDetails(dorm) {
                 <img src="img/jubus00.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus2.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
-                <img src="img/cnmbus5.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
-                <img src="img/cnmbus6.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/cnmbus5.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/cnmbus6.png" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <p>45세까지 시력이 좋아야함</span></p>
                 <p> 관련 설명...</p>
                 <p>연차수당:  </span></p>
