@@ -233,6 +233,9 @@ function showDormDetails(dorm) {
                 <img src="img/jubus00.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus2.png" alt="Jent Image" style="width: 50%; height: auto;" onclick="openModal(this)">
                 <img src="img/cnmbus.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/cnmbus5.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <img src="img/cnmbus6.jpg" alt="BMC Image 1" style="width: 50%; height: auto;" onclick="openModal(this)">
+                <p>45세까지 시력이 좋아야함</span></p>
                 <p> 관련 설명...</p>
                 <p>연차수당:  </span></p>
                 <p>퇴직금:  </span></p>
@@ -271,7 +274,7 @@ function showDormDetails(dorm) {
                 <p>퇴직금: 확인요망 </span></p>
                 <p>기숙사여부:여자O 남자X(자차인원)</span></p>
                  <p>자차 6:35도착 서실장님 번호 <p>
-
+                <p>43세까지 시력이 좋아야함</span></p>
                 <p>통근여부:스타렉스 카풀 06:15 내리파리바게트 2794스타렉스 (서실장님 탑승인원 공유해야함)</span></p>
                 <p>휴식시간:9시 14시 16시 10분씩 점심시간 30분</span></p>
                 <p>시급:년도 최저시급 </span></p>
@@ -345,6 +348,7 @@ function showDormDetails(dorm) {
                 <p>특이사항:남:만근수당7만 상여금 250% 여:만근수당6만 상여금 200% </span></p>
                 <p>특이사항2:</span></p>
                 <p>포스뱅크</p>
+                <p>47이상 힘듬</span></p>
                 <p>근무인원은 대략 140명정도</p>
                 <p>10시 20분부터 10시 30분까지 쉬는시간</p>
                 <p>점심 12시 30분부터 1시간</p>
